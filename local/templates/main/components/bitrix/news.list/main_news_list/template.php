@@ -1,4 +1,5 @@
-<?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
+<?php
+if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
 
 /** @var array $arParams */
 /** @var array $arResult */
@@ -29,7 +30,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/local/helpers.php';
                     <?php if ($arParams["DISPLAY_PICTURE"] != "N" && isset($arItem['PREVIEW_PICTURE']['SRC'])) : ?>
                         <img
                             src="<?= $arItem['PREVIEW_PICTURE']['SRC'] ?>"
-                            data-src="xxxHTMLLINKxxx0.39186223192351520.41491856731872767xxx"
                             alt="<?= $arItem['PREVIEW_PICTURE']['ALT'] ?>"
                         />
                     <?php endif; ?>
