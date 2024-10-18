@@ -2,9 +2,9 @@
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle("Главная");
 ?><?$APPLICATION->IncludeComponent(
-	"bitrix:news.list",
-	"main_news_list",
-	Array(
+	"bitrix:news.list", 
+	"main_news_list", 
+	array(
 		"ACTIVE_DATE_FORMAT" => "j F Y",
 		"ADD_SECTIONS_CHAIN" => "Y",
 		"AJAX_MODE" => "N",
@@ -25,7 +25,12 @@ $APPLICATION->SetTitle("Главная");
 		"DISPLAY_PICTURE" => "Y",
 		"DISPLAY_PREVIEW_TEXT" => "N",
 		"DISPLAY_TOP_PAGER" => "N",
-		"FIELD_CODE" => array(0=>"NAME",1=>"PREVIEW_PICTURE",2=>"DATE_CREATE",3=>"",),
+		"FIELD_CODE" => array(
+			0 => "NAME",
+			1 => "PREVIEW_PICTURE",
+			2 => "DATE_CREATE",
+			3 => "",
+		),
 		"FILTER_NAME" => "",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
 		"IBLOCK_ID" => "1",
@@ -33,7 +38,7 @@ $APPLICATION->SetTitle("Главная");
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
 		"INCLUDE_SUBSECTIONS" => "Y",
 		"MESSAGE_404" => "",
-		"NEWS_COUNT" => "2",
+		"NEWS_COUNT" => "20",
 		"PAGER_BASE_LINK_ENABLE" => "N",
 		"PAGER_DESC_NUMBERING" => "N",
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
@@ -44,7 +49,12 @@ $APPLICATION->SetTitle("Главная");
 		"PARENT_SECTION" => "",
 		"PARENT_SECTION_CODE" => "",
 		"PREVIEW_TRUNCATE_LEN" => "",
-		"PROPERTY_CODE" => array(0=>"AUTHOR",1=>"CATEGORY",2=>"",),
+		"PROPERTY_CODE" => array(
+			0 => "",
+			1 => "AUTHOR",
+			2 => "CATEGORY",
+			3 => "",
+		),
 		"SET_BROWSER_TITLE" => "N",
 		"SET_LAST_MODIFIED" => "N",
 		"SET_META_DESCRIPTION" => "N",
@@ -52,16 +62,16 @@ $APPLICATION->SetTitle("Главная");
 		"SET_STATUS_404" => "N",
 		"SET_TITLE" => "N",
 		"SHOW_404" => "N",
-		"SORT_BY1" => "ACTIVE_FROM",
-		"SORT_BY2" => "NAME",
+		"SORT_BY1" => "SORT",
+		"SORT_BY2" => "ID",
 		"SORT_ORDER1" => "DESC",
 		"SORT_ORDER2" => "ASC",
 		"STRICT_SECTION_CHECK" => "N"
 	),
-false,
-Array(
-	'ACTIVE_COMPONENT' => 'Y'
-)
+	false,
+	array(
+		"ACTIVE_COMPONENT" => "Y"
+	)
 );?><br><?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');
 ?>
