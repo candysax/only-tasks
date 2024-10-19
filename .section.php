@@ -1,9 +1,9 @@
 <?
-$sSectionName = 'Главная';
+$sSectionName = "Главная";
 $arDirProperties = array(
-	'title' => 'Мэрия города Краснорожье',
-	'description' => 'Description',
-	'keywords' => 'Keywords',
-	'robots' => 'index, follow'
+   "title" => "Задание для Only",
+   "description" => "Description",
+   "keywords" => "Keywords",
+   "robots" => "index, follow"
 );
 ?>
