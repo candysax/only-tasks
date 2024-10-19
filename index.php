@@ -3,7 +3,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle("Главная");
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:news.list", 
-	"main_news_list", 
+	"main_advantage_list", 
 	array(
 		"ACTIVE_DATE_FORMAT" => "j F Y",
 		"ADD_SECTIONS_CHAIN" => "Y",
@@ -17,7 +17,7 @@ $APPLICATION->SetTitle("Главная");
 		"CACHE_TIME" => "36000000",
 		"CACHE_TYPE" => "A",
 		"CHECK_DATES" => "Y",
-		"COMPONENT_TEMPLATE" => "main_news_list",
+		"COMPONENT_TEMPLATE" => "main_advantage_list",
 		"DETAIL_URL" => "",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
 		"DISPLAY_DATE" => "N",
